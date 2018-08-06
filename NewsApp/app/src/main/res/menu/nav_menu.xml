@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/head"
+            android:title="头条" />
+        <item
+            android:id="@+id/society"
+            android:title="社会新闻" />
+        <item
+            android:id="@+id/globle"
+            android:title="国际新闻" />
+        <item
+            android:id="@+id/country"
+            android:title="国内新闻" />
+        <item
+            android:id="@+id/entertainment"
+            android:title="娱乐新闻" />
+        <item
+            android:id="@+id/sport"
+            android:title="体育新闻" />
+        <item
+            android:id="@+id/military"
+            android:title="军事新闻" />
+        <item
+            android:id="@+id/technology"
+            android:title="科技新闻" />
+        <item
+            android:id="@+id/economy"
+            android:title="财经新闻" />
+        <item
+            android:id="@+id/fashion"
+            android:title="时尚新闻" />
+    </group>
+
+</menu>
