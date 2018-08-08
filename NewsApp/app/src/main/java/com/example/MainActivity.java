@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 final String responseText = response.body().string();
-                NewsList newsList = new Utility().parseJsonWithGson(responseText);
+                NewsList newsList = Utility.parseJsonWithGson(responseText);
 
                 if (newsList.msg.equals("成功的返回")) {
                     titleList.clear();
