@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SendMessage</string>
+    <string name="simcard1">卡1</string>
+    <string name="simcard2">卡2</string>
 </resources>

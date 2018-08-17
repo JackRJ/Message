@@ -15,14 +15,7 @@
     <TextView
         android:id="@+id/mphone"
         android:theme="@style/listItem"
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="match_parent" />
-
-    <TextView
-        android:id="@+id/mcontent"
-        android:theme="@style/listItem"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:layout_width="0dp"
         android:layout_height="match_parent" />
 </LinearLayout>

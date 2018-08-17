@@ -35,7 +35,7 @@ public class MessageAdapter extends ArrayAdapter<Person>{
             viewHolder = new ViewHolder();
             viewHolder.name = (TextView)view.findViewById(R.id.mname);
             viewHolder.phonenumber = (TextView)view.findViewById(R.id.mphone);
-            viewHolder.content = (TextView)view.findViewById(R.id.mcontent);
+            //viewHolder.content = (TextView)view.findViewById(R.id.mcontent);
             view.setTag(viewHolder);
         }else {
             view = convertView;
@@ -43,7 +43,7 @@ public class MessageAdapter extends ArrayAdapter<Person>{
         }
         viewHolder.name.setText(person.getName());
         viewHolder.phonenumber.setText(person.getPhoneNumber());
-        viewHolder.content.setText(person.getContent());
+        //viewHolder.content.setText(person.getContent());
         return view;
     }
 

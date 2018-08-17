@@ -12,6 +12,8 @@ import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
 
+import static com.example.sendmessage.MainActivity.firstRow;
+
 /**
  * Created by 帅郑 on 2018/8/9.
  */
@@ -33,12 +35,14 @@ public class ImportDataFromExcel {
                 for (int j = 0; j < columns; j++) {
                     Cell cell = sheet.getCell(j, i);
                     String result = cell.getContents();
-
+                    if(i == 0) {
+                        firstRow.add(result);
+                    }else {
                         li.add(result);
-
+                    }
                 }
                 if (li.size() > 0) {
-                    people.add(new Person(li.get(0), li.get(1), li.get(2), li.get(3)));
+                    people.add(new Person(li));
                 }
                 li = null;
             }
